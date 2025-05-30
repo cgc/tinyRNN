@@ -8,7 +8,7 @@ import os
 
 def run():
     path = Path.cwd()
-    while len(path.name) and path.name != 'cognitive_dynamics':
+    while len(path.name) and path.name != 'tinyRNN':
         path = path.parent
 
     if len(path.name):

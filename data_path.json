@@ -2,7 +2,7 @@
 	"BartoloMonkey": "D:\\p7ft2bvphx-1",
 	"MillerRat": "D:\\",
 	"AkamRat": "D:\\",
-	"SimAgent":"D:\\OneDrive\\Documents\\git_repo\\cognitive_dynamics\\files\\SimAgentDataset",
+	"SimAgent":"files/SimAgentDataset",
 	"MetaTwoStep": "F:\\two_step_exp_meta_rl\\behav_30epis_1000trials",
 	"GillanHuman": "D:\\OneDrive\\Documents\\git_repo\\cognitive_dynamics\\files",
 	"BahramiHuman": "D:\\OneDrive\\Documents\\git_repo\\cognitive_dynamics\\files",

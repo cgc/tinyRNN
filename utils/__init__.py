@@ -24,7 +24,7 @@ def set_os_path_auto():
             yield
         finally:
             pathlib.PosixPath = posix_backup
-    elif sys.platform == 'linux':
+    elif sys.platform in ('linux', 'darwin'):
         posix_backup = pathlib.WindowsPath
         try:
             pathlib.WindowsPath = pathlib.PosixPath

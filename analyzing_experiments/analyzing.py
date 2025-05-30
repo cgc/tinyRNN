@@ -2,6 +2,7 @@ import os
 
 import joblib
 import numpy as np
+import torch
 
 from utils import set_os_path_auto
 from utils import goto_root_dir
@@ -44,7 +45,7 @@ def get_config_from_path(model_path):
 
 def get_model_from_config(config, best_device=True):
     """Get the model from the config."""
-    if best_device and 'rnn_type' in config:
+    if best_device and 'rnn_type' in config and torch.cuda.is_available():
         config['device'] = 'cuda'
     ag = Agent(config['agent_type'], config=config)
     ag.load(config['model_path'], strict=False) # for the dummy variable
