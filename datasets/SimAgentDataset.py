@@ -38,6 +38,9 @@ class SimAgentDataset(BaseTwoStepDataset):
             if config['task'] == 'Akam_RTS':
                 behav['trial_type'].append(behav['action'][i] * 4 + behav['stage2'][i] * 2 + behav['reward'][i])
                 self.unique_trial_type = 8
+            elif config['task'] == 'BartoloMonkey':
+                behav['trial_type'].append(behav['action'][i] * 2 + behav['reward'][i])
+                self.unique_trial_type = 4
             else:
                 raise NotImplementedError
         if verbose: print('Total trial num:', self.total_trial_num)
